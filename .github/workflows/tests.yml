@@ -86,7 +86,7 @@ jobs:
           ./src/calculator car 10
   Deploy:
     runs-on: ubuntu-latest
-    needs: ["Compilation", "Test_Div", "Test_mul", "Test_Sub", "Test_add"]
+    needs: ["Compilation", "Test_Div", "Test_mul", "Test_Sub", "Test_add", "Test_Car"]
     steps:
       - name: Fake deploy
         run: |
