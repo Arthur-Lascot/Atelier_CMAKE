@@ -70,7 +70,7 @@ jobs:
           cmake ..
           make
           ./src/calculator div 10 5
-  Test_car:
+  Test_Car:
     runs-on: ubuntu-latest
     needs: Compilation
     steps:
@@ -83,7 +83,7 @@ jobs:
           cd build
           cmake ..
           make
-          ./src/calculator div 10
+          ./src/calculator car 10
   Deploy:
     runs-on: ubuntu-latest
     needs: ["Compilation", "Test_Div", "Test_mul", "Test_Sub", "Test_add"]
